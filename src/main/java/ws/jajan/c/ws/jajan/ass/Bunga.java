@@ -32,6 +32,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Bunga implements Serializable {
 
     private static final long serialVersionUID = 1L;
+
+    public static Object findById(String idproduct) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public static Bunga save(Bunga c) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
