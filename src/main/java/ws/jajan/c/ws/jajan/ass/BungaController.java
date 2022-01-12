@@ -47,8 +47,8 @@ public Bunga updateTokoBunga(@RequestBody Bunga c){
 return tokobunga.save(c);
 }
 @DeleteMapping("/tokobunga/{id}")
-public ResponseEntity<HttpStatus> deleteTokoBungaById(@PathVariable String idproduct){
-tokobunga.deleteById(idproduct);
+public ResponseEntity<HttpStatus> deleteTokoBungaById(@PathVariable String id){
+tokobunga.deleteById(id);
 return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 }
 }
